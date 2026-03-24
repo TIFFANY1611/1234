@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namtip - รับเขียนงานเริ่มต้น 69.-</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* จัดการ Reset พื้นฐานตามที่คุณคัดลอกมา */
+        :root {
+            --bg: #F2FFF5; /* เขียวอ่อนพาสเทล */
+            --main: #F6A5C9; /* ชมพู Namtip */
+            --dark: #E889B5; /* ชมพูเข้ม */
+            --accent: #98D8AA; /* เขียวสดชื่น */
+            --white: #FFFFFF;
+            --glow: rgba(246, 165, 201, 0.4);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mitr', sans-serif; }
+        
+        body {
+            background: var(--bg);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            padding: 20px 15px 40px;
+        }
+
+        .section {
+            background: var(--white);
+            border-radius: 25px;
+            padding: 25px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+            border: 2px solid var(--main);
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1, h2, h3 { color: var(--dark); margin-bottom: 12px; }
+        .center { text-align: center; }
+
+        /* --- ส่วนสำคัญที่คงไว้ 100% --- */
+        .logo {
+            width: 140px; height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 15px;
+            box-shadow: 0 8px 20px var(--glow);
+            border: 4px solid var(--white);
+        }
+        .logo img { width: 100%; height: 100%; object-fit: cover; }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 15px 0;
+        }
+        .badge-item {
+            width: 35px; height: 35px;
+            background: var(--accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+        }
+
+        .status-bar {
+            background: #fff;
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .status-info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .progress-track {
+            background: #eee;
+            height: 12px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            background: linear-gradient(90deg, var(--main), var(--accent));
+            width: 70%; /* ปรับเปอร์เซ็นต์คิวงานตรงนี้ */
+            height: 100%;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        .btn-dashed {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            border: 2px dashed var(--main);
+            border-radius: 15px;
+            text-decoration: none;
+            color: var(--dark);
+            text-align: center;
+            font-weight: 500;
+            margin-top: 12px;
+            transition: all 0.3s ease;
+        }
+        .btn-dashed:hover {
+            background: var(--bg);
+            transform: translateY(-2px);
+        }
+
+        /* --- รายการสินค้าและเนื้อหา --- */
+        .price-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 15px;
+            background: #FFF8FB;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            border-left: 5px solid var(--accent);
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; }
+            100% { opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="section center">
+        <div class="logo">
+            <img src="https://via.placeholder.com/150" alt="Namtip Logo">
+        </div>
+        <h1>NAMTIP</h1>
+        <p style="color: #666;">ร้านน้ำรับเขียนงาน เริ่มต้น 69.-</p>
+        
+        <div class="badges">
+            <div class="badge-item">🖋️</div>
+            <div class="badge-item">🎨</div>
+            <div class="badge-item">💖</div>
+        </div>
+    </div>
+
+    <div class="status-bar">
+        <div class="status-info">
+            <span>สถานะรับงานวันนี้</span>
+            <span style="color: var(--dark);">กำลังดำเนินการ..</span>
+        </div>
+        <div class="progress-track">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>✨ งานที่รับทำ</h3>
+        <div class="price-box">
+            <span>ป้ายแนวท้องฟ้า</span>
+            <strong>586.-</strong>
+        </div>
+        <div class="price-box">
+            <span>ป้ายแนวน่ารัก</span>
+            <strong>630.-</strong>
+        </div>
+        <div class="price-box">
+            <span>ป้ายเรทต่างๆ</span>
+            <strong>69.-</strong>
+        </div>
+        
+        <a href="https://www.youtube.com/watch?v=JYH00u0gK-0&list=RDJYH00u0gK-0&start_radio=1" class="btn-dashed">
+            🎞️ ตัวอย่างงาน (YouTube)
+        </a>
+        <a href="https://x.com/i/status/2036013838076948739" class="btn-dashed">
+            🧸 เลือก Blog / ตูน (X)
+        </a>
+    </div>
+
+    <div class="section">
+        <h3>📝 เงื่อนไขการสั่ง</h3>
+        <p style="font-size: 14px; line-height: 1.8; color: #555;">
+            • ปกติรองาน 5-10 ชั่วโมง (ตามคิววันนั้น)<br>
+            • <span style="color: red;">งานเร่ง :</span> คิดราคา 2 เท่าของเรทปกติ
+        </p>
+        <h3 style="margin-top: 20px;">📌 ขั้นตอนการสั่ง</h3>
+        <ul style="list-style: none; font-size: 14px; line-height: 1.8; color: #555;">
+            <li>1. ดูตัวอย่างงาน / บล็อกไฟล์รูปภาพ</li>
+            <li>2. แจ้งป้ายที่สนใจ / โทนสี / รายละเอียด</li>
+            <li>3. ส่งข้อความบรีฟงานให้ครบถ้วน</li>
+            <li>4. <b>โอนเงินหลังบรีฟ</b> (เริ่มงานตามคิวทันที)</li>
+            <li>5. รอรับงานตามเวลาที่แจ้งไว้</li>
+        </ul>
+    </div>
+
+    <div class="section center">
+        <h3>📱 CONTACT ME</h3>
+        <a href="https://www.facebook.com/nnamtip/?locale=th_TH" target="_blank" style="text-decoration: none; color: white; background: #1877F2; padding: 12px 25px; border-radius: 50px; display: inline-block; font-weight: 500;">
+            FACEBOOK : Namtip
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
